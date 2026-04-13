@@ -734,7 +734,8 @@
     const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbw4nruIe5hVR9n1ijfQsw67j58DiPHs7W1ChzRZSixKhvBMfc7BT5LK-xhQ1uCvD9MK8Q/exec';
 
     function sendToSheets(name, score, total, pct, answers) {
-      if (!SHEETS_URL || SHEETS_URL === 'YOUR_APPS_SCRIPT_https://script.google.com/macros/s/AKfycbw4nruIe5hVR9n1ijfQsw67j58DiPHs7W1ChzRZSixKhvBMfc7BT5LK-xhQ1uCvD9MK8Q/execURL_HERE') return;
+      if (!SHEETS_URL || SHEETS_URL === 'https://script.google.com/macros/s/AKfycbw4nruIe5hVR9n1ijfQsw67j58DiPHs7W1ChzRZSixKhvBMfc7BT5LK-xhQ1uCvD9MK8Q/exec';
+ return;
       const wrongOnes = questions
         .map((q, i) => answers[i] !== q.answer ? (i + 1) : null)
         .filter(Boolean);
